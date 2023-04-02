@@ -8,13 +8,10 @@ bool hasEqual(int (&first)[M][M], int (&second)[M][M]) {
     bool isEqual = true;
 
     for (size_t i = 0; i < M; ++i) {
-        if (!isEqual) break;
         for (size_t j = 0; j < M; ++j) {
             if (first[i][j] != second[i][j]) {
                 isEqual = false;
-                //:: возможно, сразу вернуть. Но нужно протестировать
-                //return isEqual;
-                break;
+                return isEqual;
             }
         }
     }
