@@ -1,7 +1,5 @@
 #include <iostream>
 
-//int MATRIX_SIZE = 4;
-
 // Сравнивает две матрицы
 template<size_t M>
 bool hasEqual(int (&first)[M][M], int (&second)[M][M]) {
